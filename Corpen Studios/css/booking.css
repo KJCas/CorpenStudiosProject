@@ -1,0 +1,16 @@
+
+main {
+    display: block;
+    margin: 500px; /* Centers the forms horizontally */
+}
+.heading-container h2{
+    margin-top: 100px;
+}
+.booking-section{
+    display: flex;
+    align-items: center;
+}
+.form-content {
+    width: 500px;
+    text-align: left; /* Aligns the text inside the forms to the left */
+}

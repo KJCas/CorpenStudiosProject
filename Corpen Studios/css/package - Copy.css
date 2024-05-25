@@ -1,0 +1,398 @@
+* {
+    font-family: "Poppins", "Lucida", "Times New Roman";
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+.shape-icon {
+    position: absolute;
+    top: calc(50% - 54px);
+    left: calc(50% - 269.5px);
+    border-radius: var(--br-6xl);
+    width: 33.69rem;
+    height: 5.38rem;
+    cursor: pointer;
+}
+.blank-line {
+    margin: 0;
+}
+.book-an-appointment {
+    margin: 0;
+    font-size: 2.81rem;
+}
+.booking-button,
+.button-text {
+    position: absolute;
+    width: 33.69rem;
+}
+.button-text {
+    top: 0.63rem;
+    left: calc(50% - 269.5px);
+    display: inline-block;
+    height: 6.13rem;
+}
+.booking-button {
+    top: 163.69rem;
+    left: 23.69rem;
+    height: 6.75rem;
+    text-align: center;
+    color: var(--color-black);
+}
+.lines-icon {
+    position: absolute;
+    top: 60.94rem;
+    left: 0;
+    width: 90rem;
+    height: 100.38rem;
+}
+.model-package-icon {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width: 16.5rem;
+    height: 23.81rem;
+    object-fit: cover;
+}
+.php-package {
+    margin-bottom: false;
+}
+.php-package-set-cardpo {
+    margin: 0;
+    padding-left: var(--padding-8xl);
+}
+.model-package1,
+.model-set-container {
+    position: absolute;
+    display: inline-block;
+}
+.model-set-container {
+    top: calc(50% - 96.5px);
+    left: 0;
+    white-space: pre-wrap;
+    width: 55.44rem;
+    height: 15.13rem;
+}
+.model-package1 {
+    top: 0;
+    left: calc(50% - 322.5px);
+    font-size: var(--font-size-6xl);
+    font-family: var(--font-poppins);
+    text-align: center;
+    width: 37.31rem;
+    height: 3.13rem;
+}
+.model-package {
+    position: absolute;
+    top: 132.81rem;
+    left: 3.13rem;
+    width: 85.69rem;
+    height: 25.81rem;
+    font-size: var(--font-inherit);
+    font-family: var(--font-inherit);
+}
+.unedited-softcopy-of {
+    font-size: var(--font-size-3xs);
+}
+.php-package-toga-filipi {
+    margin: 0;
+    padding-left: var(--padding-lgi);
+}
+.set-c-container,
+.set-d-container {
+    position: absolute;
+    top: calc(50% + 36px);
+    left: calc(50% - 33px);
+    display: inline-block;
+    white-space: pre-wrap;
+    width: 33rem;
+    height: 12.75rem;
+}
+.set-c-container {
+    left: calc(50% - 500px);
+    font-size: var(--font-inherit);
+    width: 22.69rem;
+    height: 13.06rem;
+}
+.set-b1 {
+    font-size: var(--font-size-mini);
+}
+.set-b-container {
+    position: absolute;
+    top: calc(50% - 245px);
+    left: calc(50% - 33px);
+    display: inline-block;
+    width: 33.31rem;
+    height: 12.13rem;
+}
+.php-package-toga-only-shot {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    padding-left: var(--padding-lgi);
+}
+.graduation-set-container {
+    position: absolute;
+    top: calc(50% - 245px);
+    left: calc(50% - 500px);
+    display: inline-block;
+    width: 28.31rem;
+    height: 10.63rem;
+    font-size: var(--font-size-mini);
+}
+.texts {
+    position: absolute;
+    top: 3.13rem;
+    left: 0;
+    width: 62.5rem;
+    height: 30.63rem;
+}
+.grad-package-icon {
+    position: absolute;
+    top: 4.81rem;
+    right: 0;
+    width: 17.56rem;
+    height: 25.06rem;
+    object-fit: cover;
+}
+.graduation-package1 {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 333.5px);
+    font-size: var(--font-size-6xl);
+    display: inline-block;
+    font-family: var(--font-poppins);
+    text-align: center;
+    width: 37.31rem;
+    height: 3.13rem;
+}
+.graduation-package {
+    position: absolute;
+    top: 97.13rem;
+    left: 3.13rem;
+    width: 86.19rem;
+    height: 33.75rem;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-inherit);
+}
+.family-set-container {
+    position: absolute;
+    top: calc(50% - 139px);
+    left: 0;
+    display: inline-block;
+    white-space: pre-wrap;
+    width: 54.81rem;
+    height: 15.13rem;
+}
+.fam-package-icon {
+    position: absolute;
+    top: 5.38rem;
+    right: 0;
+    width: 17.56rem;
+    height: 24.5rem;
+    object-fit: cover;
+}
+.family-package1 {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 319.5px);
+    font-size: var(--font-size-6xl);
+    display: inline-block;
+    font-family: var(--font-poppins);
+    text-align: center;
+    width: 37.31rem;
+    height: 3.13rem;
+}
+.family-package {
+    position: absolute;
+    top: 61.56rem;
+    left: 3.13rem;
+    width: 86.19rem;
+    height: 29.88rem;
+    font-size: var(--font-inherit);
+    font-family: var(--font-inherit);
+}
+.graduation-circle-icon,
+.model-circle-icon {
+    position: absolute;
+    top: 0;
+    border-radius: var(--br-76xl);
+    width: 22.06rem;
+    height: 32.44rem;
+    object-fit: cover;
+}
+.graduation-circle-icon {
+    left: calc(50% - 176.5px);
+}
+.model-circle-icon {
+    right: 0;
+}
+.family-circle-icon,
+.shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32.44rem;
+}
+.family-circle-icon {
+    border-radius: var(--br-76xl);
+    width: 22.06rem;
+    object-fit: cover;
+}
+.shapes {
+    width: 81.81rem;
+}
+.graduation-pic-icon,
+.model-pic-icon {
+    top: 0;
+    border-radius: var(--br-6xl);
+    object-fit: cover;
+}
+.model-pic-icon {
+    position: absolute;
+    left: 59.69rem;
+    width: 15.31rem;
+    height: 25.44rem;
+}
+.graduation-pic-icon {
+    left: 29.88rem;
+    width: 15.19rem;
+}
+.family-package-pic,
+.graduation-pic-icon,
+.pictures {
+    position: absolute;
+    height: 25.44rem;
+}
+.family-package-pic {
+    top: 0;
+    left: 0;
+    border-radius: var(--br-6xl);
+    width: 15.19rem;
+    object-fit: cover;
+}
+.pictures {
+    top: 3.5rem;
+    left: 3.44rem;
+    width: 75rem;
+}
+.family,
+.graduation,
+.model {
+    position: absolute;
+    display: inline-block;
+    height: 2.63rem;
+}
+.family {
+    top: 0;
+    left: 0;
+    width: 11.63rem;
+}
+.graduation,
+.model {
+    top: calc(50% - 21px);
+    left: calc(50% - 106.5px);
+    width: 13.31rem;
+}
+.model {
+    left: calc(50% + 385.5px);
+    width: 11.63rem;
+}
+.package-display,
+.texts1 {
+    position: absolute;
+    top: 0.38rem;
+    left: 5.19rem;
+    width: 71.44rem;
+    height: 2.63rem;
+}
+.package-display {
+    top: 19.19rem;
+    left: 4.06rem;
+    width: 81.81rem;
+    height: 32.44rem;
+    text-align: center;
+    font-size: var(--font-size-11xl);
+    color: var(--color-black);
+}
+.packages {
+    position: absolute;
+    top: 8.69rem;
+    left: calc(50% - 144px);
+    font-size: 3.13rem;
+    display: inline-block;
+    width: 17.94rem;
+    height: 4.19rem;
+}
+.cs-logo-icon {
+    position: absolute;
+    top: 0.44rem;
+    left: 0.81rem;
+    width: 28.31rem;
+    height: 4.56rem;
+    object-fit: cover;
+}
+.about,
+.book-appointment,
+.login {
+    position: absolute;
+    top: 2.13rem;
+    left: 73.94rem;
+    display: inline-block;
+    width: 4.19rem;
+    height: 1.38rem;
+}
+.about,
+.book-appointment {
+    left: 67.69rem;
+    width: 6.25rem;
+    height: 2.69rem;
+}
+.book-appointment {
+    left: 53.56rem;
+    width: 13.31rem;
+    height: 1.38rem;
+}
+.gallery,
+.packages1 {
+    top: 2.13rem;
+    display: inline-block;
+    height: 2.69rem;
+}
+.packages1 {
+    position: absolute;
+    left: 45.63rem;
+    width: 7.94rem;
+}
+.gallery {
+    left: 39.06rem;
+    width: 6.25rem;
+}
+.gallery,
+.home,
+.nav-bar {
+    position: absolute;
+}
+.home {
+    top: 2.13rem;
+    left: 33.38rem;
+    display: inline-block;
+    width: 4.44rem;
+    height: 1.69rem;
+}
+.nav-bar {
+    top: 0;
+    left: 0;
+    background-color: var(--color-black);
+    width: 90rem;
+    height: 5.94rem;
+}
+.package-display-page {
+    position: relative;
+    background-color: black;
+    width: 100%;
+    height: 172.56rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-xl);
+    color: var(--color-white);
+    font-family: var(--font-poppins);
+}

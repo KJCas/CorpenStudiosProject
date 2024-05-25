@@ -1,0 +1,93 @@
+*{
+    text-align: center;
+    color: white;
+    font-family: Poppins, Calibri, sans-serif;
+}
+
+body {
+    background-color: black;
+    src: url("images/about-2.jpg");
+}
+.section {
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    padding-top: 40px;
+    font-weight: bold;
+}
+.heading_container > a {
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+.heading_container > a:hover{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    border-color: gold;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+span:hover{
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ABOUT */
+.about-us, .other-info {
+    position: absolute;
+    margin-left: 3%;
+    padding-right: 3%;
+    transform: inline;
+}
+
+.other-info {
+    top: 300px;
+}
+
+h1, h3 {
+    margin-top: 50px;
+    font-weight: bold;
+    text-align: left;
+}
+
+h3 {
+    margin-bottom: 25px;
+}
+
+dt {
+    text-align: left;
+    color: gold;
+}
+
+p, dd {
+    margin-right: 60%;
+    text-align: justify;
+}
+
+.images img{
+    width: 55%;
+    height: auto;
+    float: right;
+    margin: 20px;
+    display: flex;
+}

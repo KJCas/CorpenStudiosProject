@@ -1,0 +1,99 @@
+.slider-container {
+    position: fixed; /* Position the container relative to the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to the full viewport height */
+    top: 50%; /* Position it at the vertical center of the viewport */
+    left: 50%; /* Position it at the horizontal center of the viewport */
+    transform: translate(-50%, -50%); /* Center the container precisely */
+    z-index: 999; /* Set a high z-index to ensure it's above other content */
+    overflow: hidden; /* Hide any overflow to prevent scrollbars */
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    width: calc(100vw * 2); /* Double the viewport width to accommodate the slides */
+    transform: translate(-50%, -50%); /* Center the container precisely */
+    animation: scroll 40s linear infinite;
+}
+
+h1 {
+    position: absolute;
+    top: 120px;
+    left: 50%; /* Adjust the horizontal position */
+    transform: translate(-50%, -50%); /* Center the h1 precisely */
+    z-index: 999; /* Ensure the h1 is above other content */
+    color: white; /* Example color */
+    font-size: 36px; /* Example font size */
+    text-align: center; /* Center the text horizontally */
+}
+
+.slide-track {
+    display: flex;
+    width: 100%;
+}
+
+.slide-track:hover{
+    animation-play-state: running;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0); /* Start position: no horizontal translation */
+    }
+    100% {
+        transform: translateX(calc(-250px * 9)); /* End position: translate left by 9 images */
+    }
+}
+
+
+img {
+    width: 100%; /* Fill the entire width of the slide */
+    height: 100%; /* Fill the entire height of the slide */
+    object-fit: cover; /* Ensure the image covers the entire slide */
+    transition: transform 1s;
+    
+}
+
+img:hover{
+    transform: translateZ(20px);
+}
+
+.slide {
+    height: 100%; /* Fill the entire height of the slider */
+    width: calc(100% / 9); /* Divide the width equally for 9 images */
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the image horizontally */
+    padding: 15px;
+    perspective: 120px;
+    flex: 0 0 auto; /* Ensure each slide takes up the same amount of space */
+    margin-top: 100px; /* Add some top margin to push the images downward */
+}
+
+/* Shadows */
+
+.slider::before,
+
+.slider::after{
+    background: linear-gradient(tto right, rgba(255, 255,  255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before{
+    left: 0;
+    top: 0;
+}
+
+.slider::after{
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}

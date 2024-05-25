@@ -1,0 +1,8 @@
+CREATE TABLE users(
+    UserId int PRIMARY KEY AUTO_INCREMENT,
+    Username varchar(200),
+    Email varchar(200),
+    Password varchar(200),
+    DateCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    DateModified TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

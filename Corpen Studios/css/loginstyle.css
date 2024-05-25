@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*-------------------- NAVBAR --------------------*/
+.navbar{
+    padding: 0rem;
+}
+
+/*---------- NAVBAR LEFT ----------*/
+.navbar-left{
+    margin: 0 50px 0 0px;
+    padding: 0 50px 0 10px;
+}
+.navbar-brand{
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar-brand img{
+    width: 15%;
+    height: auto;
+}
+.navbar-brand>a{
+    font-size: 16px;
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    margin: 5px 0px 0 0;
+    text-decoration: none;
+}
+.navbar-brand>a{
+    margin: 0 2px 0 2px;
+    text-decoration: none;
+}
+.navbar-brand:hover, .navbar-brand>a>label:hover{
+    color: #ffca00;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/*---------- NAVBAR CENTER ----------*/
+.navbar-links, li>a{
+    display: flex;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 20px 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    height: 60px;
+}
+.navbar-links a:hover{
+    text-decoration: none;
+    display: inline;
+    color: gold;
+    transition: 0.2s;
+}
+
+/*---------- NAVBAR RIGHT ----------*/
+.navbar-right{
+    margin: 0 30px 0 150px;
+}
+.navbar-right a{
+    border-width: 0px;
+    color: white;
+    padding-left: 10%;
+    justify-content: right;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.login-btn:hover{
+    color: gold;
+    transition: 0.2s;
+}
+
+/*---------- POPUP & BLUR ----------*/
+
+.form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    min-width: 35%;
+    max-width: 720px;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+}
+.show-popup .form-popup{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+}
+.form-popup .fa-solid{
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    z-index: 10;
+    color: white;
+    cursor: pointer;
+}
+.blur-bg-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: 0.5s ease;
+}
+.show-popup .blur-bg-overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*-------------------- LOGIN & REGISTRATION --------------------*/
+
+/*---------- FORM ----------*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 60px 20px 30px 20px;
+    height: 620px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgba(40, 36, 36, 0.406);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(50px);
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+.box-login{
+    position: absolute;
+    width: 85%;
+    left: 27px;
+    transition: .5s ease-in-out;
+}
+.box-register{
+    position: absolute;
+    width: 85%;
+    right: -350px;
+    transition: .5s ease-in-out;
+}
+.top-header{
+    text-align: center;
+    margin: 30px 0;
+}
+.top-header h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.input-group{
+    display: inline;
+     width: 100%;
+    
+}
+.input-field{
+    margin: 12px 0;
+    position: relative;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: #161414;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 45px 0 20px;
+    background: rgba(224, 223, 223, 0.6);
+    backdrop-filter: blur(2px);
+    outline: none;
+}
+.input-field label{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+}
+.input-box:focus ~ label,.input-box:valid ~ label{
+    top: 2px;
+    font-size: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+/*---------- EXTRA FORM THINGS ----------*/
+.remember{
+    margin-bottom: 73px;
+    display: flex;
+    font-size: 13px;
+    color: white;
+}
+.remember label{
+    margin-bottom: 0;
+}
+.check{
+    margin-right: 8px;
+    width: 14px;
+}
+.input-submit{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: gold;
+    color: black;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.144);
+    cursor: pointer;
+    transition: .4s;
+}
+.input-submit:hover{
+    background: #141414;
+    border: 1px solid gold;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s;
+}
+.forgot{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.forgot a{
+    color: white;
+}
+.switch{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 25px;
+    width: 85%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.switch a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    z-index: 10;
+}
+#btn{
+    position: absolute;
+    bottom: 0px;   
+    left: 0px;
+    width: 145px;
+    height: 50px;
+    background: #cccccd;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in-out;
+}
+.eye-area{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.eye-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+i{
+    position: absolute;
+    color: #444444;
+    cursor: pointer;
+}
+#eye,#eye-2{
+    opacity: 1;
+}
+#eye-slash, #eye-slash-2{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 576px){
+    .box{
+        margin: 0 5px;
+    }
+    #btn{
+        position: absolute;
+        width: 153px;
+    }
+}
